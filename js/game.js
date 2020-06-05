@@ -18,8 +18,8 @@ let run_audio = new Audio();
 fly.src = "";
 run_audio.src = "audio/ran_teacher_ran.mp3";
 setTimeout(() => {
-  run_audio.play();
-}, 1000);
+  const call = run_audio.play();
+}, 2000);
 
 // При натисненні на будь яку клавішу
 document.addEventListener("keydown", moveUp);
