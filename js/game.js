@@ -17,7 +17,10 @@ let run_audio = new Audio();
 
 fly.src = "";
 run_audio.src = "audio/ran_teacher_ran.mp3";
-const call = run_audio.play();
+setTimeout(() => {
+  run_audio.play();
+}, 1000);
+
 // При натисненні на будь яку клавішу
 document.addEventListener("keydown", moveUp);
 function moveUp() {
