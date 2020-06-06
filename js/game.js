@@ -19,7 +19,7 @@ run_audio.volume = 0.2;
 fly.src = "audio/click.mp3";
 run_audio.src = "audio/ran_teacher_ran.mp3";
 setTimeout(() => {
-  const call = run_audio.play();
+  run_audio.play();
 }, 2000);
 
 // При натисненні на будь яку клавішу
@@ -64,7 +64,7 @@ function draw() {
   context.drawImage(fg, 0, 450, 320, 100);
   context.drawImage(teacher, xPos, yPos);
 
-  yPos += grav;
+  yPos += grav && yPos <= 410;
 
   context.fillStyle = "#000";
   context.font = "24px Verdana";
