@@ -14,8 +14,9 @@ pipeBottom.src = "img/pipeBottom.png";
 // Звукові файли
 let fly = new Audio();
 let run_audio = new Audio();
+run_audio.volume = 0.2;
 
-fly.src = "";
+fly.src = "audio/click.mp3";
 run_audio.src = "audio/ran_teacher_ran.mp3";
 setTimeout(() => {
   const call = run_audio.play();
