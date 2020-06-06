@@ -18,12 +18,16 @@ run_audio.volume = 0.2;
 
 fly.src = "audio/click.mp3";
 run_audio.src = "audio/ran_teacher_ran.mp3";
+
 setTimeout(() => {
   run_audio.play();
 }, 2000);
 
 // При натисненні на будь яку клавішу
 document.addEventListener("keydown", moveUp);
+document.addEventListener("click", moveUp);
+document.addEventListener("touchstart", moveUp);
+
 function moveUp() {
   yPos -= 40;
   fly.play();
